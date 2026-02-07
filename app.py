@@ -3,10 +3,14 @@ import sqlite3
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return render_template("home.html")
+
 def conectar():
     return sqlite3.connect("zona.db")
 
-@app.route("/")
+@app.route("/videos")
 def index():
     con = conectar()
     cur = con.cursor()
