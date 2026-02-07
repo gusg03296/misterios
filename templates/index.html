@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Zona Oscura</title>
+<link rel="stylesheet" href="/static/estilo.css">
+</head>
+
+<body>
+
+<h1>🌑 ZONA OSCURA</h1>
+
+<a href="/admin">Subir nuevo video</a>
+
+<hr>
+
+{% for v in videos %}
+<div class="video">
+    <h2>{{v[1]}}</h2>
+    <p>Categoría: {{v[3]}}</p>
+    <a href="/video/{{v[0]}}">Ver caso</a>
+</div>
+{% endfor %}
+
+</body>
+</html>
+

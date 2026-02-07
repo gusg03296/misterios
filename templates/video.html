@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>{{video[1]}}</title>
+<link rel="stylesheet" href="/static/estilo.css">
+</head>
+
+<body>
+
+<h1>{{video[1]}}</h1>
+
+<div>
+<!-- Aquí luego irá la publicidad -->
+ANUNCIO AQUÍ
+</div>
+
+<iframe width="560" height="315"
+src="{{video[2]}}"
+frameborder="0" allowfullscreen>
+</iframe>
+
+<p>{{video[4]}}</p>
+
+<hr>
+
+<h3>Deja tu comentario</h3>
+
+<form action="/comentar/{{video[0]}}" method="POST">
+<textarea name="texto"></textarea><br>
+<button>Enviar</button>
+</form>
+
+<a href="/">Regresar</a>
+
+</body>
+</html>
+

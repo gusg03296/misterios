@@ -1,0 +1,4 @@
+zona.db
+*.pyc
+__pycache__/
+uploads/
